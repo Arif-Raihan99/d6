@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Position</title>
+        <style>
+            .div-1{
+                height: 300px;
+                width: 500px;
+                background-color: darkgreen;
+                position: relative;
+                border: 1px solid blanchedalmond;
+                margin-top: 10px;
+            }
+            .div-2{
+                height: 200px;
+                width: 200px;
+                background-color: red;
+                border-radius: 50%;
+                position: absolute;
+                right: 180px;
+                top: 50px;
+            }
+            .div-3{
+                height: 300px;
+                width: 300px;
+                background-color: yellow;
+                border: 2px solid red;
+                transition: 1s;
+                margin: 150px;
+                /*transform: scale(1);*/
+                /*transform: scaleX(1);*/
+                /*transform: scaleY(1);*/
+                /*transform: scale3d(1,1,1);*/
+                /*transform: rotate(0deg);*/
+                /*transform: rotateX(0deg);*/
+                /*transform: rotateY(0deg);*/
+                transform: skew(0deg);
+            }
+            .div-3:hover{
+                /*border-radius: 150px;*/
+                /*transform: scale(1.5);*/
+                /*transform: scaleX(1.5);*/
+                /*transform: scaleY(1.5);*/
+                /*transform: scale3d(1.5,1.5,1.5);*/
+                /*transform: rotate(360deg);*/
+                /*transform: rotateX(180deg);*/
+                /*transform: rotateY(360deg);*/
+                transform: skew(-90deg);
+                transition: 3s;
+            }
+            .div-box{
+                margin-left: 150px;
+            }
+            .one{
+                height: 300px;
+                width: 50px;
+                background-color: red;
+                transform: skew(-25deg);
+                float: left;
+            }
+            .two{
+                height: 300px;
+                width: 50px;
+                background-color: red;
+                transform: skew(25deg);
+                margin-left: 150px;
+            }
+            .three{
+                height: 25px;
+                width: 190px;
+                background-color: red;
+                margin-top: -140px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+    <div class="div-box">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+
+
+    <div class="div-3"></div>
+    <div class="div-1">
+        <div class="div-2"></div>
+    </div>
+
+
+    </body>
+</html>
